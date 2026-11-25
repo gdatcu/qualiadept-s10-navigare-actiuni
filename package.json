@@ -1,0 +1,24 @@
+{
+  "name": "qualiadept-s10-navigare-actiuni",
+  "version": "1.0.0",
+  "private": true,
+  "description": "QualiAdept QA Automation Bootcamp – Sesiunea 10: Navigare și acțiuni de bază",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "playwright test",
+    "test:tracker": "playwright test --project=task-tracker-chromium --project=task-tracker-firefox --project=task-tracker-webkit",
+    "test:exemple": "playwright test --project=s10-exemple",
+    "test:todomvc": "playwright test --project=todomvc",
+    "test:saucedemo": "playwright test --project=saucedemo",
+    "test:tema": "playwright test --project=tema",
+    "debug:lab": "playwright test --project=debug-lab --debug",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "check:hygiene": "node scripts/check-hygiene.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^22.0.0",
+    "serve": "^14.2.0"
+  }
+}
